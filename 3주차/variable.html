@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta http-equiv=Content-Type Content="text/html; charset=utf-8">
+        <title>지역 변수와 전역 변수</title>
+        <script LANGUAGE="JAVASCRIPT">
+            i = 100;
+            function fn() {
+                var i;
+                i = 300;
+                j = 500;
+                document.write("<br>여기는 함수 내부. 두 값은?" +"&nbsp" + i + "&nbsp" + j);
+            }
+        </script>
+    </head>
+    <body>
+        <script LANGUAGE="JAVASCRIPT">
+            fn();
+            document.write("<br>여기는 함수 외부. 두 값은?" +"&nbsp" + i + "&nbsp" + j);
+        </script>
+    </body>
+</html>

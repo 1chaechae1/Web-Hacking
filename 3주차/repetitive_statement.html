@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta http-equiv=Content-Type Content="text/html; charset=utf-8">
+        <title>반복문</title>
+    </head>
+    <body>
+        <script LANGUAGE="JAVASCRIPT">
+            var i;
+            var sum = 0;
+            var fact = 1;
+            var or1=num=prompt("정수 값을 입력하세요", " ");
+
+            if(num != null) {
+                for(i=1; i<=num; i++) {
+                    sum+=i;
+                }
+                document.write("<br>1에서 "+num+"까지의 합은 "+sum+" 입니다.<br>");
+                
+                while(num) {
+                    fact*=num;
+                    num--;
+                }
+                document.write("<br>"+or1+"팩토리얼 값은 "+fact+" 입니다.<br>");
+            }
+            else {
+                document.write("<br>입력이 취소되었습니다<br>");
+            }
+        </script>
+    </body>
+</html>

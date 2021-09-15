@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta http-equiv=Content-Type Content="text/html; charset=utf-8">
+        <title>자료형</title>
+    </head>
+    <body>
+        <script LANGUAGE="JAVASCRIPT">
+            var currentYear=2021;
+            var greeting="안녕하세요 "
+            var Ok=false
+            var birthYear;
+            var age;
+
+            birthYear = prompt("태어난 연도(YYYY)?", " ");
+            age = currentYear - birthYear + 1;
+            document.write("<br>"+greeting+"<br>");
+            document.write("<br>당신의 나이는" + "&nbsp" + age + "살 입니다");
+            Ok = age>=20;
+            document.write("<br>당신은 성인인가요?"+"&nbsp" + Ok +"<br>");
+        </script>
+    </body>
+</html>
